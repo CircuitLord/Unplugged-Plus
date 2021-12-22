@@ -4,7 +4,7 @@ using MelonLoader;
 namespace UnpluggedNoteSmooth {
 	
 	[HarmonyPatch(typeof(Mp3Player), "Update")]
-	class Mp3PlayerPatch {
+	public static class Mp3PlayerPatch {
 
 		public static bool Prefix(Mp3Player __instance) {
 
